@@ -4,7 +4,7 @@
 
 Egy **modern, reszponzív webalkalmazás**, amellyel:
 - ✨ **Adóazonosító jelet generálhatsz** a születési dátum és sorszám alapján.
-- ✅ **Érvényességet ellenőrizhetsz** és **visszafejtheted a születési időt**.
+- ✅ **Érvényességet ellenőrizhetsz** és **visszafejtheted a születési időt YYYY-HH-NN formátumban**.
 - 📱 Teljesen **reszponzív**, mobilra optimalizált.
 - 🌙 **Dark Mode** támogatással.
 - ⚡ Élő előnézet és automatikus ellenőrzés.
