@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🆔 Adóazonosító Jel Generátor és Ellenőrző
 
-## Getting Started
+![Adóazonosító generátor előnézet](https://github.com/n0rvyll/adoazonosito-app/blob/main/readme/01.jpeg)
 
-First, run the development server:
+Egy **modern, reszponzív webalkalmazás**, amellyel:
+- ✨ **Adóazonosító jelet generálhatsz** a születési dátum és sorszám alapján.
+- ✅ **Érvényességet ellenőrizhetsz** és **visszafejtheted a születési időt**.
+- 📱 Teljesen **reszponzív**, mobilra optimalizált.
+- 🌙 **Dark Mode** támogatással.
+- ⚡ Élő előnézet és automatikus ellenőrzés.
+
+---
+
+## 🚀 Funkciók
+
+### 🔹 Generálás
+- Születési dátum + sorszám megadásával készíthetsz **érvényes adóazonosító jelet**.
+- **Előnézet** gombnyomás előtt – már írás közben látod a várható eredményt.
+- Tiltott sorszám (`000`) figyelmeztetés.
+- Másolás vágólapra egy kattintással.
+
+![Generálás képernyő](https://github.com/n0rvyll/adoazonosito-app/blob/main/readme/02.jpeg)
+
+---
+
+### 🔹 Ellenőrzés
+- 10 számjegy beírása után **automatikusan lefut az ellenőrzés**.
+- Érvényes jel esetén visszaadja a **születési időt**.
+- Színes, jól látható visszajelzés.
+
+---
+
+### 🔹 Tooltip magyarázatok
+- Kis ℹ️ ikon, amely kattintva magyarázatot ad a mező funkciójáról.
+- ESC vagy kattintás a mezőn kívül bezárja.
+
+![Tooltip példa](https://github.com/n0rvyll/adoazonosito-app/blob/main/readme/03.jpeg)
+
+---
+
+## 📜 Az adóazonosító jel képzése
+
+Az 1996. évi XX. törvény 1. számú melléklete alapján:
+
+1. **Első számjegy**: mindig `8`.
+2. **2–6. számjegyek**: a születési dátum és 1867.01.01. között eltelt napok száma.
+3. **7–9. számjegyek**: sorszám (alapértelmezett `100`, „000” tiltott).
+4. **10. számjegy**: ellenőrző szám (mod 11; ha maradék `10`, új sorszám kell).
+
+
+---
+
+## 🛠 Technológia
+
+- **[Next.js 14+](https://nextjs.org/)**
+- **[React 18+](https://react.dev/)**
+- **[Tailwind CSS](https://tailwindcss.com/)** – modern, reszponzív dizájn
+- TypeScript a biztonságos kódhoz
+
+---
+
+## 📦 Telepítés és futtatás
 
 ```bash
+# Projekt klónozása
+git clone https://github.com/felhasznalo/adoazonosito-generator.git
+
+cd adoazonosito-generator
+
+# Függőségek telepítése
+npm install
+
+# Fejlesztői szerver indítása
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Megnyitás a böngészőben
+http://localhost:3000
