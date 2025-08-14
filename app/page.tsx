@@ -42,7 +42,7 @@ export default function Home() {
   // Tooltip állapot (fade-in/out kétlépcsős)
   const [tooltipVisible, setTooltipVisible] = useState(false);
   const [tooltipOpen, setTooltipOpen] = useState(false);
-  const tooltipRef = useRef<HTMLDivElement | null>(null);
+  const tooltipRef = useRef<HTMLLabelElement | null>(null);
 
   // ÚJ: Élő előnézet állapot
   const [previewId, setPreviewId] = useState<string | null>(null);
