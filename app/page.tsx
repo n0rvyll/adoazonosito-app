@@ -382,13 +382,7 @@ export default function Home() {
                 onChange={(e) => setValInput(e.target.value.replace(/\D/g, ""))}
                 className="h-12 rounded-lg border border-slate-300 px-3 text-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-400 dark:border-slate-500 dark:bg-slate-800 dark:text-white"
               />
-              <button
-                type="submit"
-                disabled={loadingVal}
-                className="h-12 rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-sm transition hover:from-blue-600 hover:to-blue-700"
-              >
-                Ellenőrzés
-              </button>
+              
             </form>
 
             {valMsg && (
