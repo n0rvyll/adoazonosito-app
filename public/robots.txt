@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://pelda-domen.hu
+
+# Sitemaps
+Sitemap: https://pelda-domen.hu/sitemap.xml

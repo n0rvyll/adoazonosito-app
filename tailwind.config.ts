@@ -2,20 +2,28 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        // Ha van shadcn/ui vagy saját theme-ed, itt bővítsd.
+        background: "hsl(0 0% 100%)",
+        foreground: "hsl(222.2 47.4% 11.2%)",
+        muted: "hsl(210 40% 96%)",
+        "muted-foreground": "hsl(215.4 16.3% 46.9%)",
+      },
+      borderRadius: {
+        xl: "1rem",
+        "2xl": "1.25rem",
+      },
+    },
   },
-  plugins: [], // ide később jöhetnek pluginek, ha kell
+  plugins: [
+    // ha használsz pluginokat: require nem kell; ESM-ben importáld a tetején
+  ],
 };
 
 export default config;
-
-module.exports = {
-  darkMode: 'media', // vagy 'class'
-  // ...
-}
-
