@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://pelda-domen.hu", // saját domain
+  siteUrl: "https://nrv.taxnumber.hu", // saját domain
   generateRobotsTxt: true,
   changefreq: "weekly",
   priority: 0.7,

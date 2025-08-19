@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pelda-domen.hu"), // ← állítsd saját domainre
+  metadataBase: new URL("https://tasnumber.nrv.hu"), // ← állítsd saját domainre
   title: {
     default: "Adóazonosító jel — generátor és ellenőrző",
     template: "%s | Adóazonosító jel",
